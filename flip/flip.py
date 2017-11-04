@@ -25,15 +25,9 @@ def launch():
 @ask.intent("FlipIntent")
 
 def flip():
-	requests.get('https://b6dc3b04.ngrok.io/flip')
+	requests.get('https://alexa-blackjack-gk.herokuapp.com/flip')
 	msg = render_template('flip')
 	return statement(msg)
-
-# @ask.intent("Associate")
-# def associate():
-
-
-
 
 
 if __name__ == '__main__':
